@@ -1,0 +1,3 @@
+nom=$(whoami)
+cd /home/$nom
+
