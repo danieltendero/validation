@@ -1,0 +1,6 @@
+contador=10
+while [ $contador -gt 0 ]
+do
+  echo "DevOps"
+  let contador=$contador-1
+done
