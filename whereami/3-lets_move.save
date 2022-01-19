@@ -1,4 +1,0 @@
-mkdir -p /tmp/u
-declare -a ej= find ./ -name "[A-Z]*"
-
-echo ${ej[1]}
