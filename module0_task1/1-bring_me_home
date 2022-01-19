@@ -1,4 +1,3 @@
 #!/bin/bash
-nom=$(whoami)
-cd /home/$nom
+cd ~
 
