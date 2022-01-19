@@ -1,3 +1,2 @@
 #!/bin/bash
 sudo mv [A-Z]* /tmp/u
-
