@@ -1,20 +1,21 @@
 ## Prerequisites
 
-Necesitas Hugo 0.80
-Mozilla, Chrome o Edge
+go Hugo 0.80+
+gnu Make 4+
+Mozilla or Chrome or Edge navigator
 
 
 ## Lifecycle
 
-Cuenta con 3 etapas:
-### Build step:
-    Generar sitio web en el directorio dist/
-
+it has 3 stages:
+### build step:
+	creates website and locates it in the dist/ directory
 ### clean step:
-    limpiar el contenido del directorio dist/
-
+	cleans dist directory
 ### post step:
-    crear nueva publicacion de blog con el nombre y titulo  que provengan de las variables POST_NAME y POST_TITLE
-
+	acepts 2 parameters POST_NAME and POST_TITLE, the first one
+	gives the name of the post(without extension .md) and the
+	second one gives the title of the post. After this the post
+	will be created with command 'make POST_NAME POST_TITLE post'
 ### help:
-    Muestra uns descripcion de cada comando make
+	command make help will gives a description of every command.
