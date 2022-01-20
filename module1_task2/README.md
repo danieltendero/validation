@@ -1,8 +1,11 @@
 ## Prerequisites
+
 Necesitas Hugo 0.80
 Mozilla, Chrome o Edge
 
+
 ## Lifecycle
+
 Cuenta con 3 etapas:
 ### Build step:
     Generar sitio web en el directorio dist/
