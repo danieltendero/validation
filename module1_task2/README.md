@@ -1,17 +1,17 @@
-# Prerequisites
+## Prerequisites
 Necesitas Hugo 0.80 y Mozilla, Chrome o Edge
 
-# Lifecycle
+## Lifecycle
 Cuenta con 3 etapas:
-## Build step:
+### Build step:
 `Generar sitio web en el directorio dist/
 `
-## clean step:
+### clean step:
 `limpiar el contenido del directorio dist/
 `
-## post step:
+### post step:
 `crear nueva publicacion de blog con el nombre y titulo  que provengan de las variables POST_NAME y POST_TITLE
 `
-## help:
+### help:
 `Muestra uns descripcion de cada comando make
 `
