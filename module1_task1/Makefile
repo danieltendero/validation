@@ -1,12 +1,9 @@
-.PHONY: build
 build:
-	hugo -D
+	hugo -D > /dev/null 2>&1
 
-.PHONY: clean
 clean:
-	rm -r ./dist/*
+	rm -r ./dist/* /dev/null 2>&1
 
-.PHONY: post
 post:
 	hugo new posts/$(POST_NAME).md 
-	echo "--- \ntitle: \"$(POST_TITLE)\" \ndraft: false\n---" > content/posts/$(POST_NAME).md
+	echo "--- \ntitle: \"$(POST_TITLE)\" \ndraft: false\n---" > ./content/posts/$(POST_NAME).md
