@@ -16,7 +16,7 @@ Cuenta con 5 etapas:
 ### run step:
     Ejecuta en segundo plano el archivo awesome-api
     
-### test step:
+### Test step:
     Realiza un test para comprobar que la aplicacion hace lo que debe hacer
 
 ### stop step:
