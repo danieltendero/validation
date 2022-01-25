@@ -17,3 +17,4 @@ stop: ##Detiene la aplicacion
 test: ##Realiza un test para comprobar que la aplicacion hace lo que debe hacer
 	curl http://localhost:9999
 	curl http://localhost:9999/health
+
