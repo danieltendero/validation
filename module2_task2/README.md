@@ -7,7 +7,7 @@ Mozilla, Chrome o Edge
 ## Lifecycle
 
 Cuenta con 6 etapas:
-### unit-test step:
+### unit-tests step:
     Ejecutas las pruebas unitarias del proyecto
 
 ### lint step:
