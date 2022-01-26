@@ -32,6 +32,12 @@ func Test_HelloHandler(t *testing.T) {
     },
     {
       name:         "",
+      queryString:  "name=",
+      responseCode: 200,
+      body:         "Hello there!",
+    },
+    {
+      name:         "",
       queryString:  "",
       responseCode: 200,
       body:         "Hello there!",
