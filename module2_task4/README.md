@@ -16,10 +16,10 @@ Cuenta con 5 etapas:
 ### post step:
     crear nueva publicacion de blog con el nombre y titulo  que provengan de las variables POST_NAME y POST_TITLE
 
-### check step: 
+### check: 
     comprueba que no haya enlances muertos y el Markdown este bien escrito
 
-### validate step: 
+### validate: 
     valida el archivo index.html de la carpeta dist con el w3c-validatos
 
 ### help:
