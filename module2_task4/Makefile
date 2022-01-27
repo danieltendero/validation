@@ -14,7 +14,7 @@ check: ## comprueba que no haya enlances muertos y el Markdown este bien escrito
 	markdown-link-check ./content/posts/welcome.md >/dev/null 2>&1
 	
 validate: ## valida el archivo index.html de la carpeta dist con el w3c-validatos
-	./w3c_validator.py ./dist/index.html 
+	./W3C-Validator/w3c_validator.py ./dist/index.html > /dev/null 2>&1 || true
 	
 help: ## Muestra uns descripcion de cada comando make
 	@sed -ne '/@sed/!s/## //p' $(MAKEFILE_LIST)
