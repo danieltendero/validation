@@ -7,11 +7,11 @@ Mozilla, Chrome o Edge
 ## Lifecycle
 
 Cuenta con 5 etapas:
-### build step:
-    Generar sitio web en el directorio dist/
+### build-hugo step:
+    Generar sitio web en el directorio dist/ 
 
 ### clean step:
-    limpiar el contenido del directorio dist/
+    Elimina los archivos awesome-api, awesome.log y el directorio dist/
 
 ### post step:
     crear nueva publicacion de blog con el nombre y titulo  que provengan de las variables POST_NAME y POST_TITLE
@@ -21,6 +21,30 @@ Cuenta con 5 etapas:
 
 ### validate: 
     valida el archivo index.html de la carpeta dist con el w3c-validatos
+
+### build step: 
+	ejcuta los build de go y hugo
+
+### integration-tests: 
+    ejecutar pruebas de integracion del proyecto
+
+### unit-tests step:
+    Ejecutas las pruebas unitarias del proyecto
+
+### lint step:
+    Ejecuta analisis con lint
+    
+### build-go step:
+    Compila el codigo fuente de la aplicacion en awesome-api
+
+### run step:
+    Ejecuta en segundo plano el archivo awesome-api
+    
+### Test step:
+    Realiza un test para comprobar que la aplicacion hace lo que debe hacer
+
+### stop step:
+    Detiene la aplicacion
 
 ### help:
     Muestra uns descripcion de cada comando make
