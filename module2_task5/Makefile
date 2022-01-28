@@ -52,5 +52,6 @@ stop: ## Detiene la aplicacion
 test: ## Realiza un test para comprobar que la aplicacion hace lo que debe hacer
 	make unit-tests
 	make integration-tests
+	make validate
 
 
