@@ -50,7 +50,7 @@ stop: ## Detiene la aplicacion
 	kill $$(pgrep -f "awesome-api") > /dev/null 2>&1 &	
 
 test: ## Realiza un test para comprobar que la aplicacion hace lo que debe hacer
-	make integration-tests
 	make unit-tests
+
 
 
