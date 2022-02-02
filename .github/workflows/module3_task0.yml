@@ -6,5 +6,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: mkdir module3_task0
-      - run: cp ./module2_task5/* ./module3_task0/
+      - run: cp ./module2_task5 ./module3_task0
