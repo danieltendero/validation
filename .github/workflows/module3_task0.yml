@@ -6,4 +6,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: cp -r ./module2_task5 ./module3_task0
+      - run: ls -la
+      - run: cd 
+      - run: ls -la
