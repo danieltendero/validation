@@ -6,4 +6,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - run: ls -la
+      - run: cd ..
+      - run: ls -la
