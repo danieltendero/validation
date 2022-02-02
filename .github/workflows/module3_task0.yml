@@ -8,5 +8,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+      - run: cp -r ./module2_task5/ ./module3_task0
       - run: ls -la
-      - run: pwd
+      - run: ls -la ./module3_task0
