@@ -11,3 +11,5 @@ jobs:
       - run: ls -la /home/runner/work/validation
       - run: ls -la
       - run: ls -la /home/runner/work
+      - run: ls -la /home/runner
+      - run: ls -la /home
