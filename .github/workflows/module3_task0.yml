@@ -8,5 +8,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: cd ./module3_task0
-      - run: ls -la
+      - name: moviendonos a module3_task0
+        working-directory: ./module3_task0
+      - run: make help
