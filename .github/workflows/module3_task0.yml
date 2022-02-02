@@ -8,6 +8,6 @@ jobs:
     steps:
       - run: ls -la
       - run: pwd
-      - run: cd /home/runner/work/validation
-      - run: pwd
+      - run: ls -la /home/runner/work/validation
       - run: ls -la
+      - run: ls -la /home/runner/work
