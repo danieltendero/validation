@@ -11,4 +11,3 @@ jobs:
       - name: moviendonos a module3_task0
         working-directory: ./module3_task0
         run: make help
-      - run: ls -la
