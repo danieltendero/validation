@@ -11,4 +11,6 @@ jobs:
       - run: cp -r ./module2_task5/ ./module3_task0
       - run: ls -la
       - run: ls -la ./module3_task0
+      - run: git add .
+      - run: git commit -m "crear modulo3_task0"
       - run: git push origin main
