@@ -10,8 +10,8 @@ jobs:
     name: 'Yamllint'
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: 'Check out repository code'
         uses: actions/checkout@v2
-      - name: moviendonos a module3_task0
+      - name: 'moviendonos a module3_task0'
         working-directory: ./module3_task0
         run: make help
