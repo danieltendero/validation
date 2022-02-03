@@ -1,5 +1,7 @@
 #!/bin/bash
-sudo apt install golang-go
+wget https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
+sudo tar -xzf go1.8.linux-amd64.tar.gz -C /usr/local
+export PATH=$PATH:/usr/local/go/bin
 
 
 # binary will be $(go env GOPATH)/bin/golangci-lint
