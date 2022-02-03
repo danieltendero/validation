@@ -16,6 +16,6 @@ jobs:
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
         run: make help
+      - run: sudo apt install golang-go
       - run: go version
-      - run: golangci-lint version
 
