@@ -16,9 +16,6 @@ jobs:
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
         run: sh ./setup.sh
-      - name: 'moviendonos a module3_task1'
-        working-directory: ./module3_task1
-        run: make build
       - run: go version
       - run: hugo version
       - run: golangci-lint version
