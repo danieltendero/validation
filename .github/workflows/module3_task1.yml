@@ -1,0 +1,18 @@
+
+name: module3_task1
+on:
+  push:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '30 5,17 * * *'
+
+jobs:
+  yamllint:
+    name: 'module3_task1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Check out repository code'
+        uses: actions/checkout@v2
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make help
