@@ -9,7 +9,7 @@ on:
 jobs:
   yamllint:
     name: 'module3_task1'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: 'Check out repository code'
         uses: actions/checkout@v2
