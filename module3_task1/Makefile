@@ -40,7 +40,6 @@ lint: ## ejecuta analisis con lint
 	golangci-lint run
 
 build-go: ## Compila el codigo fuente de la aplicacion en awesome-api
-	make lint
 	go build
 
 run: ## Ejecuta en segundo plano el archivo awesome-api
