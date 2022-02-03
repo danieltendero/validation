@@ -3,7 +3,7 @@ sudo apt install golang-go
 
 
 # binary will be $(go env GOPATH)/bin/golangci-lint
-sudo curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.44.0
+sudo go get -u github.com/golangci/golangci-lint/cmd/golangci-lint@v1.44.0
 
 
 sudo wget https://github.com/gohugoio/hugo/releases/download/v0.87.0/hugo_0.87.0_Linux-64bit.deb
