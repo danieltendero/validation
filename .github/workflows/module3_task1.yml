@@ -15,10 +15,8 @@ jobs:
         uses: actions/checkout@v2
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
-        run: make help
-      - run: curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.44.0
-
-      - run: sudo apt install golang-go
+        run: sh ./setup.sh
       - run: go version
+      - run: hugo version
       - run: golangci-lint version
 
