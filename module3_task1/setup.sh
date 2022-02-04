@@ -10,6 +10,6 @@ export PATH=$PATH:/usr/local/go/bin
 rm go1.8.linux-amd64.tar.gz
 
 
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.44.0
+go get -u github.com/golangci/golangci-lint/cmd/golangci-lint@v1.44.0
 
 sleep 5
