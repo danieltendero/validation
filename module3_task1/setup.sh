@@ -10,9 +10,6 @@ export PATH=$PATH:/usr/local/go/bin
 rm go1.8.linux-amd64.tar.gz
 
 
-# binary will be $(go env GOPATH)/bin/golangci-lint
-curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.44.0
-
-golangci-lint --version
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.44.0
 
 sleep 5
