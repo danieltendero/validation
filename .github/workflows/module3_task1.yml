@@ -28,10 +28,10 @@ jobs:
         run: make build
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
-        run: make unit-tests
-      - name: 'moviendonos a module3_task1'
-        working-directory: ./module3_task1
-        run: make validate
+        run: make unit-tests 
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
         run: make integration-tests
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make validate
