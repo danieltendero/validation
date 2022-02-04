@@ -18,5 +18,6 @@ jobs:
         run: sh ./setup.sh
       - run: go version
       - run: hugo version
+      - run: go version
       - run: golangci-lint version
 
