@@ -7,7 +7,7 @@ on:
     - cron: '30 5,17 * * *'
 
 jobs:
-  yamllint:
+  golangci:
     name: 'module3_task1'
     runs-on: ubuntu-18.04
     steps:
