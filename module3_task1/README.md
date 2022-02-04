@@ -33,8 +33,13 @@ Cuenta con 5 etapas:
 
 ### lint step:
     Ejecuta analisis con lint
+    
 ### Workflow:
     clona repositorio y prueba make help
+    
+### Build Workflow:
+    construir workflow
+    
 ### build-go step:
     Compila el codigo fuente de la aplicacion en awesome-api
 
