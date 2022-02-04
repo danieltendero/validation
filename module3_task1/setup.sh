@@ -7,7 +7,4 @@ sudo rm hugo_0.87.0_Linux-64bit.deb
 # binary will be $(go env GOPATH)/bin/golangci-lint
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.44.0
 
-golangci-lint --version
-
-
 sleep 5
