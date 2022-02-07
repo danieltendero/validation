@@ -9,15 +9,14 @@ on:
       - main
 
 jobs:
-  call-workflow-passing-data:
-    uses: danieltendero/validation/.github/workflows/module3_task1.yml@main
-    with:
-      username: danieltendero
-    secrets:
-      token: ${{ secrets.TOKEN }}
-  
   yamllint:
     name: 'module3_task1'
     runs-on: ubuntu-18.04
     steps:
-      - run: ls -la
+      - name: "asd"
+        uses: danieltendero/validation/.github/workflows/module3_task1.yml@main
+        with:
+          username: danieltendero
+          token: ${{ secrets.TOKEN }}
+          run: ls
+    
