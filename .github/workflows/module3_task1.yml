@@ -30,7 +30,8 @@ jobs:
         run: make unit-tests
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
-        run: make integration-tests
+        run: make validate
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
-        run: make validate
+        run: make integration-tests
+      
