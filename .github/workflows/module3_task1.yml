@@ -18,12 +18,12 @@ jobs:
     name: 'module3_task1'
     runs-on: ubuntu-18.04
     steps:
+      - name: 'Check out repository code'
+        uses: actions/checkout@v2
       - uses: ./.github/actions/my-action
         with:
           username: ${{ inputs.username }}
           token: ${{ secrets.token }}
-      - name: 'Check out repository code'
-        uses: actions/checkout@v2
       - name: install go
         uses: actions/setup-go@v2
         with:
