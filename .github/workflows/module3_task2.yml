@@ -9,14 +9,9 @@ on:
       - main
 
 jobs:
-  yamllint:
-    name: 'module3_task1'
-    runs-on: ubuntu-18.04
-    steps:
-      - name: "asd"
-        uses: danieltendero/validation/.github/workflows/module3_task1.yml@main
-        with:
-          username: danieltendero
-          token: ${{ secrets.TOKEN }}
-          run: ls
-    
+   call-workflow-passing-data:
+    uses: octo-org/example-repo/.github/workflows/workflow-B.yml@main
+    with:
+      username: mona
+    secrets:
+      token: ${{ secrets.TOKEN }}
