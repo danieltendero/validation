@@ -8,4 +8,4 @@ on:
 
 jobs:
   call-workflow:
-    uses: .github/workflows/module3_task1.yml
+    uses: .github/workflows/module3_task1.yml@v1
