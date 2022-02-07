@@ -15,3 +15,9 @@ jobs:
       username: danieltendero
     secrets:
       token: ${{ secrets.TOKEN }}
+  
+  yamllint:
+    name: 'module3_task1'
+    runs-on: ubuntu-18.04
+    steps:
+      - run: ls -la
