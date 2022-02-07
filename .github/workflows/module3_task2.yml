@@ -1,11 +1,13 @@
 name: module3_task2
 on:
-  push:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron: '30 5,17 * * *'
-  workflow_call:
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  call-workflow:
-    uses: danieltendero/validation/.github/workflows/module3_task1.yml@v1
+  call-workflow-passing-data:
+    uses: danieltendero/validation/.github/workflows/module3_task1.yml@main
+    with:
+      username: danieltendero
+    secrets:
+      token: ${{ secrets.TOKEN }}
