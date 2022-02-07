@@ -38,7 +38,7 @@ unit-tests: ## ejecutas las pruebas unitarias del proyecto
 
 lint: ## ejecuta analisis con lint
 	golangci-lint run
-	shellcheck setup.sh
+	shellcheck setup.sh >/dev/null 2>&1 || echo "Lint Failed"
 
 build-go: ## Compila el codigo fuente de la aplicacion en awesome-api
 	go build
