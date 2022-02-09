@@ -8,3 +8,34 @@ on:
     branches:
       - main
 
+jobs:
+  yamllint:
+    name: 'module3_task1'
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 'Check out repository code'
+        uses: actions/checkout@v2
+      - name: 'asd'
+        run: zip --help
+      - name: install go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.17.6'
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: sh ./setup.sh
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make lint
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make build
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make unit-tests
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make validate
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make integration-tests
