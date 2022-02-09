@@ -56,5 +56,5 @@ Cuenta con 5 etapas:
     Muestra uns descripcion de cada comando make
 
 ### package:
-    asdasdasd
+    comprimir proyecto
 
