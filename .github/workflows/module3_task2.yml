@@ -37,3 +37,6 @@ jobs:
       - name: 'moviendonos a module3_task1'
         working-directory: ./module3_task1
         run: make integration-tests
+      - name: 'moviendonos a module3_task1'
+        working-directory: ./module3_task1
+        run: make package
