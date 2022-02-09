@@ -8,10 +8,3 @@ on:
     branches:
       - main
 
-jobs:
-   call-workflow-passing-data:
-    uses: danieltendero/validation/.github/workflows/module3_task1.yml@main
-    with:
-      username: mona
-    secrets:
-      token: ${{ secrets.TOKEN }}
