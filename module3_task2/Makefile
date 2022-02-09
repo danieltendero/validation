@@ -27,6 +27,7 @@ clean: ## Elimina los archivos awesome-api, awesome.log y el directorio dist/
 	rm -rf ./awesome-api ./awesome.log ./dist/ > /dev/null 2>&1 &
 	rm ./coverage-integrations.out
 	rm ./coverage-units.out
+	rm ./awesome-website.zip
 	
 
 
