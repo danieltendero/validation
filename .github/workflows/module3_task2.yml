@@ -10,13 +10,11 @@ on:
 
 jobs:
   yamllint:
-    name: 'module3_task1'
+    name: 'module3_task2'
     runs-on: ubuntu-18.04
     steps:
       - name: 'Check out repository code'
         uses: actions/checkout@v2
-      - name: 'asd'
-        run: zip --help
       - name: install go
         uses: actions/setup-go@v2
         with:
