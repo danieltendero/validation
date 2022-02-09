@@ -52,7 +52,7 @@ stop: ## Detiene la aplicacion
 test: ## Realiza un test para comprobar que la aplicacion hace lo que debe hacer
 	make unit-tests
 
-target: ## asdasdsad
+package: ## asdasdsad
 	ls- la
 
 
