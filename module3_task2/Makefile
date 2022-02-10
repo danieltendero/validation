@@ -52,3 +52,7 @@ stop: ## Detiene la aplicacion
 
 test: ## Realiza un test para comprobar que la aplicacion hace lo que debe hacer
 	make unit-tests
+
+package: ## comprimir proyecto
+	zip -r awesome-website.zip awesome-api dist/
+	
