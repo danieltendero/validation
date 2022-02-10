@@ -41,13 +41,10 @@ jobs:
       - name: 'moviendonos a module3_task3'
         working-directory: ./module3_task3
         run: make package
-      - name: Tag
-        run: |
-          git tag "v1.0.0"
-          git push origin "v1.0.0"
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: ./module3_task2/awesome-website.zip
+          tag_name: 'v1.0.0'
         env:
           GITHUB_REPOSITORY: danieltendero/validation/module3_task3@v1.0.0
