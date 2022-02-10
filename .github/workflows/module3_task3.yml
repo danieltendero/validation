@@ -29,7 +29,7 @@ jobs:
       - name: 'moviendonos a module3_task3'
         working-directory: ./module3_task3
         run: make build
-      - name: 'moviendonos a module3 _task3'
+      - name: 'moviendonos a module3_task3'
         working-directory: ./module3_task3
         run: make unit-tests
       - name: 'moviendonos a module3_task3'
