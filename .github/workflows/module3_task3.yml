@@ -20,24 +20,30 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: '1.17.6'
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: sh ./setup.sh
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: make lint
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: make build
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: make unit-tests
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: make validate
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: make integration-tests
-      - name: 'moviendonos a module3_task2'
-        working-directory: ./module3_task2
+      - name: 'moviendonos a module3_task3'
+        working-directory: ./module3_task3
         run: make package
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./module3_task2/awesome-website.zip
+        env:
+          GITHUB_REPOSITORY: danieltendero/validation/module3_task3@v1.0.0
