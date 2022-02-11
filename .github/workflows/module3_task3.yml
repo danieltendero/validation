@@ -46,5 +46,4 @@ jobs:
         with:
           files: ./module3_task3/awesome-website.zip
           tag_name: 'v1.0.0'
-        env:
-          GITHUB_REPOSITORY: danieltendero/validation/module3_task3/DEPLOY.md
+          release: danieltendero/validation/module3_task3/DEPLOY.md
