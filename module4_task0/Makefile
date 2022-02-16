@@ -42,7 +42,7 @@ lint: ## ejecuta analisis con lint
 	shellcheck setup.sh >/dev/null 2>&1 || echo "Lint Failed"
 
 build-go: ## Compila el codigo fuente de la aplicacion en awesome-api
-	go build
+	docker run golang:1.15.8-buster go build
 
 run: ## Ejecuta en segundo plano el archivo awesome-api
 	./awesome-api >./awesome.log 2>&1 &
