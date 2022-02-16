@@ -1,0 +1,27 @@
+name: module4_task0
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*.*.*"
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '30 5,17 * * *'
+
+jobs:
+  yamllint:
+    name: 'module4_task0'
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 'Check out repository code'
+        uses: actions/checkout@v2
+      - name: 'moviendonos a module4_task0'
+        working-directory: ./module4_task0
+        run: sh ./setup.sh
+      - name: 'moviendonos a module4_task0'
+        working-directory: ./module4_task0
+        run: make build-go
