@@ -15,7 +15,7 @@ on:
 jobs:
   yamllint:
     name: 'module4_task0'
-    runs-on: debian-buster
+    runs-on: debian
     steps:
       - name: 'Check out repository code'
         uses: actions/checkout@v2
